@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53FB34C1-6648-4D4C-B270-43E431DF2A4A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjetoAutocuidado</RootNamespace>
+    <AssemblyName>ProjetoAutocuidado</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Ajuda.aspx" />
+    <Content Include="AlertaAlimentacao1.aspx" />
+    <Content Include="AlertaMovimentacao1.aspx" />
+    <Content Include="AlertaRotacao1.aspx" />
+    <Content Include="Contactos.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="images\img01.jpg" />
+    <Content Include="images\img02.jpg" />
+    <Content Include="images\img03.jpg" />
+    <Content Include="images\img04.jpg" />
+    <Content Include="images\img05.jpg" />
+    <Content Include="images\img06.jpg" />
+    <Content Include="images\img07.jpg" />
+    <Content Include="images\img08.jpg" />
+    <Content Include="images\img09.jpg" />
+    <Content Include="images\img10.gif" />
+    <Content Include="images\img11.gif" />
+    <Content Include="images\img12.jpg" />
+    <Content Include="images\img15.jpg" />
+    <Content Include="Global.asax" />
+    <Content Include="jwplayer\alimentacao.m4v" />
+    <Content Include="jwplayer\anim.flv" />
+    <Content Include="jwplayer\jwplayer.js" />
+    <Content Include="jwplayer\player.swf" />
+    <Content Include="jwplayer\Sequence 01.flv" />
+    <Content Include="jwplayer\Sequence 02.flv" />
+    <Content Include="jwplayer\Sequence 03.flv" />
+    <Content Include="jwplayer\Sequence 04.flv" />
+    <Content Include="MapaNavegacao.aspx" />
+    <Content Include="Recursos.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\style.css" />
+    <Content Include="TemaAlimentacao.aspx" />
+    <Content Include="TemaAlimentacaoPosicao.aspx" />
+    <Content Include="TemaAlimentacaoPosicaoSNG.aspx" />
+    <Content Include="TemaAlimentacaoResiduo.aspx" />
+    <Content Include="TemaAlimentacaoTecnica.aspx" />
+    <Content Include="TemaMovimentacao.aspx" />
+    <Content Include="TemaMovimentacaoCadeira.aspx" />
+    <Content Include="TemaRotacaoPosicaoCostas.aspx" />
+    <Content Include="TemaRotacaoPosicaoLado.aspx" />
+    <Content Include="TemarotacaoPosicaoSemi.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="TemaRotacao.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajuda.aspx.cs">
+      <DependentUpon>Ajuda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajuda.aspx.designer.cs">
+      <DependentUpon>Ajuda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlertaAlimentacao1.aspx.cs">
+      <DependentUpon>AlertaAlimentacao1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlertaAlimentacao1.aspx.designer.cs">
+      <DependentUpon>AlertaAlimentacao1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlertaMovimentacao1.aspx.cs">
+      <DependentUpon>AlertaMovimentacao1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlertaMovimentacao1.aspx.designer.cs">
+      <DependentUpon>AlertaMovimentacao1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlertaRotacao1.aspx.cs">
+      <DependentUpon>AlertaRotacao1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlertaRotacao1.aspx.designer.cs">
+      <DependentUpon>AlertaRotacao1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Autocuidado.Master.cs">
+      <DependentUpon>Autocuidado.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autocuidado.Master.designer.cs">
+      <DependentUpon>Autocuidado.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Contactos.aspx.cs">
+      <DependentUpon>Contactos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contactos.aspx.designer.cs">
+      <DependentUpon>Contactos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MapaNavegacao.aspx.cs">
+      <DependentUpon>MapaNavegacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MapaNavegacao.aspx.designer.cs">
+      <DependentUpon>MapaNavegacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursos.aspx.cs">
+      <DependentUpon>Recursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recursos.aspx.designer.cs">
+      <DependentUpon>Recursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemaAlimentacao.aspx.cs">
+      <DependentUpon>TemaAlimentacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemaAlimentacao.aspx.designer.cs">
+      <DependentUpon>TemaAlimentacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemaAlimentacaoPosicao.aspx.cs">
+      <DependentUpon>TemaAlimentacaoPosicao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemaAlimentacaoPosicao.aspx.designer.cs">
+      <DependentUpon>TemaAlimentacaoPosicao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemaAlimentacaoPosicaoSNG.aspx.cs">
+      <DependentUpon>TemaAlimentacaoPosicaoSNG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemaAlimentacaoPosicaoSNG.aspx.designer.cs">
+      <DependentUpon>TemaAlimentacaoPosicaoSNG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemaAlimentacaoResiduo.aspx.cs">
+      <DependentUpon>TemaAlimentacaoResiduo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemaAlimentacaoResiduo.aspx.designer.cs">
+      <DependentUpon>TemaAlimentacaoResiduo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemaAlimentacaoTecnica.aspx.cs">
+      <DependentUpon>TemaAlimentacaoTecnica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemaAlimentacaoTecnica.aspx.designer.cs">
+      <DependentUpon>TemaAlimentacaoTecnica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemaMovimentacao.aspx.cs">
+      <DependentUpon>TemaMovimentacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemaMovimentacao.aspx.designer.cs">
+      <DependentUpon>TemaMovimentacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemaMovimentacaoCadeira.aspx.cs">
+      <DependentUpon>TemaMovimentacaoCadeira.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemaMovimentacaoCadeira.aspx.designer.cs">
+      <DependentUpon>TemaMovimentacaoCadeira.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemaRotacao.aspx.cs">
+      <DependentUpon>TemaRotacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemaRotacao.aspx.designer.cs">
+      <DependentUpon>TemaRotacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemaRotacaoPosicaoCostas.aspx.cs">
+      <DependentUpon>TemaRotacaoPosicaoCostas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemaRotacaoPosicaoCostas.aspx.designer.cs">
+      <DependentUpon>TemaRotacaoPosicaoCostas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemaRotacaoPosicaoLado.aspx.cs">
+      <DependentUpon>TemaRotacaoPosicaoLado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemaRotacaoPosicaoLado.aspx.designer.cs">
+      <DependentUpon>TemaRotacaoPosicaoLado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemarotacaoPosicaoSemi.aspx.cs">
+      <DependentUpon>TemarotacaoPosicaoSemi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemarotacaoPosicaoSemi.aspx.designer.cs">
+      <DependentUpon>TemarotacaoPosicaoSemi.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Autocuidado.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2557</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

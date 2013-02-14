@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Autocuidado.master.cs"
+    Inherits="ProjetoAutocuidado.Autocuidado" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Adapted From:
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : EarthlingTwo  
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090918
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>O Site do Cuidador</title>
+    <link href="Styles\style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript" src="/Scripts/jquery-1.4.1.js"></script>
+    <script type="text/javascript">
+        function extractPageName(hrefString) {
+            var arr = hrefString.split('/');
+            return (arr.length < 2) ? hrefString : arr[arr.length - 2].toLowerCase() + arr[arr.length - 1].toLowerCase();
+        }
+        function setActiveMenu(arr, crtPage) {
+            for (var i = 0; i < arr.length; i++) {
+                if (extractPageName(arr[i].href) == crtPage) {
+                    if (arr[i].parentNode.tagName != "DIV") {
+                        arr[i].className = "current_page_item";
+                        arr[i].parentNode.className = "current_page_item";
+                    }
+                }
+            }
+        }
+        function setPage() {
+            hrefString = document.location.href ? document.location.href : document.location;
+
+            if (document.getElementById("menu") != null)
+                setActiveMenu(document.getElementById("menu").getElementsByTagName("a"), extractPageName(hrefString));
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo">
+                <h1>
+                    <a href="Index.aspx">O Site do Cuidador</a></h1>
+                <p>
+                    Autocuidado</p>
+            </div>
+        </div>
+        <!-- end #header -->
+        <div id="menu">
+            <ul>
+                <li><a href="Index.aspx">Início</a></li>
+                <li><a href="#">Temas</a>
+                    <ul>
+                        <li><a href="TemaMovimentacao.aspx">Transferir-se</a></li>
+                        <li><a href="TemaRotacao.aspx">Virar-se</a></li>
+                        <li><a href="TemaAlimentacao.aspx">Alimentar-se</a></li>
+                    </ul>
+                </li>
+                <li><a href="Ajuda.aspx">Ajuda</a></li>
+                <li><a href="Recursos.aspx">Recursos</a></li>
+                <li><a href="Contactos.aspx">Contactos</a></li>
+            </ul>
+            <script type="text/javascript">setPage()</script>
+        </div>
+        <!-- end #menu -->
+        <div id="page">
+            <asp:ContentPlaceHolder ID="WideBarPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <div style="clear: both;">
+                    &nbsp;</div>
+            </div>
+            <div id="sidebar">
+                <asp:ContentPlaceHolder ID="SideBarPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div style="clear: both;">
+                &nbsp;</div>
+        </div>
+        <!-- end #page -->
+    </div>
+    <div id="footer-content">
+        <div class="column1">
+            <h2>
+                Links Úteis</h2>
+            <div style="padding: 0px 0px 0px 50px;">
+                <p>
+                    <a href="http://www.westons.com/acatalog/index.html" target="_blank">Equipamento Médico
+                        Westons</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                            href="MapaNavegacao.aspx" target="_blank">Mapa de Navegação do Site</a>
+                </p>
+                <p>
+                    <a href="http://www.min-saude.pt/portal" target="_blank">Ministério da Saúde</a></p>
+                <p>
+                    <a href="http://www2.seg-social.pt/" target="_blank">Segurança Social</a></p>
+                <p>
+                    <a href="http://www.saude24.pt/PresentationLayer/home_00.aspx" target="_blank">Saúde
+                        24</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>
+            2012 Parceria ESEP - ISEP</p>
+    </div>
+    </form>
+</body>
+</html>
